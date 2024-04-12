@@ -1,13 +1,13 @@
 # WebMail System - Server
 
-This is the web-mail system for the server side. To find the client side, please go to: https://github.com/Emmeline1101/webmail-client
+This is the web-mail system for the server side (Run first). To find the client side, please go to: https://github.com/Emmeline1101/webmail-client
 
 ## Setup
 ### Prerequisites
 - Node.js and npm (as above)
 - Webpack (if not already included in the project dependencies)
 
-### Installation
+### Setup
 1. Navigate to the client directory:
 `cd path/to/server`
 
