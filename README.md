@@ -1,6 +1,6 @@
-# WebMail System - Client
+# WebMail System - Server
 
-This is the web-mail system for the client side. To find the client side, please go to: https://github.com/Emmeline1101/webmail-server
+This is the web-mail system for the server side. To find the client side, please go to: https://github.com/Emmeline1101/webmail-client
 
 ## Setup
 ### Prerequisites
@@ -9,7 +9,7 @@ This is the web-mail system for the client side. To find the client side, please
 
 ### Installation
 1. Navigate to the client directory:
-`cd path/to/client`
+`cd path/to/server`
 
 2. Install the required npm packages:
 `npm install`
