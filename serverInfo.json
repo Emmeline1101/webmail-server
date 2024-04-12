@@ -1,0 +1,18 @@
+{
+  "smtp" : {
+    "host" : "smtp.office365.com",
+    "port" : 587,
+    "auth" : {
+      "user" : "tillchentest@outlook.com",
+      "pass" : "Qc6aLkT&kUrrvKH"
+    }
+  },
+  "imap" : {
+    "host" : "outlook.office365.com",
+    "port" : 993,
+    "auth" : {
+      "user" : "tillchentest@outlook.com",
+      "pass" : "Qc6aLkT&kUrrvKH"
+    }
+  }
+}
