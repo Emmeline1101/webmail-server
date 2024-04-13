@@ -1,7 +1,9 @@
 import * as path from "path";
 import Nedb from "nedb";
 const Datastore = require("nedb");
-
+/*
+总的来说，这段代码提供了一个 Worker 类，用于与基于文件的 NeDB 数据库进行交互，执行联系人数据的 CRUD（创建、读取、更新、删除）操作。
+*/
 export interface IContact {
   _id?: number;
   name: string;

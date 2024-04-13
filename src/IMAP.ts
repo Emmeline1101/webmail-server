@@ -1,13 +1,14 @@
+// 这个文件处理与IMAP服务器的交互,用于接收邮件。它定义了几个接口和一个Worker类:
 const ImapClient = require("emailjs-imap-client");
 import { ParsedMail } from "mailparser";
 import { simpleParser } from "mailparser";
 import { IServerInfo } from "./ServerInfo";
-
+//ICallOptions: 定义了IMAP操作的选项,包括邮箱和消息ID。
 export interface ICallOptions {
   mailbox: string;
   id?: number;
 }
-
+//IMessage: 表示一封邮件,包含ID、日期、发件人、主题和正文
 export interface IMessage {
   id: string;
   date: string;
@@ -15,14 +16,14 @@ export interface IMessage {
   subject: string;
   body?: string;
 }
-
+//IMailbox: 表示一个邮箱,包含名称和路径。
 export interface IMailbox {
   name: string;
   path: string;
 }
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; //skip TLS
-
+//Worker: 一个包含多个方法的类,用于连接到IMAP服务器,列出邮箱,获取邮件等
 export class Worker {
   private static serverInfo: IServerInfo;
   constructor(inServerInfo: IServerInfo) {

@@ -5,7 +5,9 @@ import * as IMAP from "./IMAP";
 import * as SMTP from "./SMTP";
 import * as Contacts from "./contacts";
 import { IContact } from "./contacts";
-
+/*
+总的来说,这段代码实现了一个简单的电子邮件和联系人管理的Web服务器,提供了相应的API端点来处理各种操作。它使用了Express.js框架、IMAP和SMTP协议,并对电子邮件和联系人数据进行了CRUD(创建、读取、更新和删除)操作。
+*/
 const app: Express = express();
 // add middleware
 app.use(express.json()); // json into js
@@ -23,7 +25,9 @@ app.use(function (
   );
   inNext(); //允许跨域请求，通过设置相应的 CORS 头，以便在浏览器中安全地处理来自不同域的请求
 });
-
+/*
+这部分定义了与IMAP(Internet消息访问协议)相关的API端点,包括获取邮箱列表、获取邮件列表、获取邮件正文内容和删除邮件
+*/
 // List Mailbox
 app.get("/mailboxes", async (inRequest: Request, inResponse: Response) => {
   try {
@@ -84,6 +88,8 @@ app.delete(
 );
 
 //send messages
+//这部分定义了与SMTP(简单邮件传输协议)相关的API端点,用于发送新邮件。
+
 app.post(
   "/messages",
 
@@ -97,7 +103,9 @@ app.post(
     }
   }
 );
-
+/*
+这部分定义了与联系人管理相关的API端点,包括获取联系人列表、添加新联系人、删除联系人和更新联系人信息。
+*/
 app.get(
   "/contacts",
 

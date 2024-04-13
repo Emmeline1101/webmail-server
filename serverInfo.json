@@ -3,16 +3,16 @@
     "host" : "smtp.office365.com",
     "port" : 587,
     "auth" : {
-      "user" : "tillchentest@outlook.com",
-      "pass" : "Qc6aLkT&kUrrvKH"
+      "user" : "your.gmail@gmail.com",
+      "pass" : "yourGmailPassword"
     }
   },
   "imap" : {
     "host" : "outlook.office365.com",
     "port" : 993,
     "auth" : {
-      "user" : "tillchentest@outlook.com",
-      "pass" : "Qc6aLkT&kUrrvKH"
+      "user" : "your.gmail@gmail.com",
+      "pass" : "yourGmailPassword"
     }
   }
 }
